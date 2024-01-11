@@ -5,12 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'apiapp/css/main.css'%}">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+
+    <title>Бухгалтерия 1.0</title>
 </head>
-<body>
+<body> 
+    <div class="content-head">
+        <h1>Accounting 1.0</h1>
+    </div>
    <div class="container">
-    <div class="content">
-        <h1>application version 1.0</h1>
+   
+    <div class="user-title">
+        <div class="user-title-profile">
+            <img src="../../static/apiapp/img/user-icon.svg" alt="" class="user-title-icon">
+            <h2 class="user-title-name">User_name</h2>
+            <div class="user-title-icon-pen">
+                <img src="../../static/apiapp/img/pen.svg" alt="" >
+            </div>   
+        </div>
+        <p class="user-title-total-balance">Balance: <span id="balance-money">10000$</span></p>
+    </div>
+
+    <div class="content-body">
+        <h2>Hello app!</h2>
     </div>
    </div>
 </body>

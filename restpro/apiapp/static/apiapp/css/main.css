@@ -1,14 +1,19 @@
 .container{
-    width: 1130px;
+    max-width: 1300px;
     height: 100vh;
     margin: 0 auto;
-    background-color: #aaaaaa;
-    padding: 0 50px; 
+    background-color: #fdfdfd;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    
 }
 
 h1 {
+    padding-top: 25px;
     margin: 0 auto;
     text-align: center;
+    color: #ffffff;
+    
 }
 
 body{
@@ -16,12 +21,87 @@ body{
     margin: 0;
     width: 100%;
     height: 100%;
+    background-image: url(../img/snow.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Signika Negative', sans-serif;
 }
 
-.content{
+.content-head{
     left: 0;
     right: 0;
     margin: 0 auto;
-    
+    background-color: transparent;
+}
 
+.user-title{
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 4px solid #d0b15a;
+    border-bottom: 3px solid #d0b15a;
+    background-color: #ffd970;
+    padding: 5px 0;
+}
+
+.user-title-profile{
+    display: flex;
+    margin-left: 70px;
+    color: #1c274c;
+    align-items: center;
+   
+}
+
+
+.user-title-icon{
+    width: 80px;
+    height: 80px;
+    margin: 0;
+}
+
+.user-title-icon-pen{
+    margin-left: 5px;
+    height: 100px;
+}
+
+.user-title-icon-pen img{
+    width: 26px;
+    height: 26px;
+    padding-top: 37px;
+    cursor: pointer;
+}
+.user-title-icon-pen img:hover{
+    transform: scale(1.1);
+    transition: 0.1s ease-in;
+    transform-origin: center, center;
+    transform-box: fill-box; 
+}
+.user-title-name{
+   margin-left: 25px;
+   font-size: 30px;
+   
+}
+
+.user-title-total-balance{
+    font-size: 30px;
+    margin-right: 15%;
+    font-weight: bold;
+}
+
+#balance-money{
+    color: rgb(79, 125, 9);
+    margin-left: 10px;
+}
+
+.content-body{
+    margin: 30px 20px;
+    border: 3px solid #1c274c;
+    border-radius: 13px;
+}
+.content-body h2{
+    margin-left: 20px;
 }
