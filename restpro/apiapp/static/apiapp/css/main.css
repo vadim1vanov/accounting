@@ -44,8 +44,10 @@ body{
     align-items: center;
     border-top: 4px solid #d0b15a;
     border-bottom: 3px solid #d0b15a;
+    border-right: 4px solid #d0b15a;
+    border-left: 4px solid #d0b15a;
     background-color: #ffd970;
-    padding: 5px 0;
+    padding: 5px 50px;
 }
 
 .user-title-profile{
@@ -53,7 +55,6 @@ body{
     margin-left: 70px;
     color: #1c274c;
     align-items: center;
-   
 }
 
 
@@ -82,8 +83,7 @@ body{
 }
 .user-title-name{
    margin-left: 25px;
-   font-size: 30px;
-   
+   font-size: 30px; 
 }
 
 .user-title-total-balance{
@@ -92,14 +92,34 @@ body{
     font-weight: bold;
 }
 
+.profile{
+    justify-content: center;
+    text-align: center;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.profile:hover{
+    transform: scale(1.1);
+    transition: 0.1s ease-in;
+}
+.profile p{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.profile img{
+    width: 35px;
+    height: 35px;
+}
+
 #balance-money{
-    color: rgb(79, 125, 9);
+    color: rgb(33, 170, 5);
     margin-left: 10px;
 }
 
 .content-body{
-    margin: 0 20px;
-    
+    margin: 0 20px;  
     border-radius: 13px;
     height: 800px;
 }
@@ -107,18 +127,16 @@ body{
 .content-body-head{
     display: flex;
     justify-content: space-between;
-    align-items:flex-start;
+    align-items:baseline;
     margin: 20px 35px 90px 0;
 }
 .debt{
     margin-left: 50px;
-    font-size: 20px;
-    
-    
+    font-size: 20px; 
 }
 .debt img{
-    width: 22px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     vertical-align: middle;
     padding-bottom: 2px;
     margin-left: 5px;
@@ -128,20 +146,26 @@ body{
     transform: scale(1.1);
     transition: 0.1s ease-in;
     cursor: pointer;
-    color: #001269;
+    color: #155aa8;
 }
 
 .content-body-transfer{
-    display: flex;
     justify-content: right;
     margin-top: 50px;
-    
+    text-align: center;
+}
+
+
+
+.content-body-transfer-btn{
+    display: flex;
 }
 
 .content-body-transfer button{
     display: flex;
     align-items: center;
     padding: 10px 25px;
+    border-radius: 30px;
 }
 
 .content-body-transfer button:hover{
@@ -152,18 +176,20 @@ body{
     transition: 70ms ease-in;
     transform-origin: center, center;
     transform-box: fill-box;
-    
     border: 1px solid #000000;
-
 }
 
 
 #btn1:hover{
-    background-color: #dfffdb;
+    background-color: #d1fccc;
+    color: rgb(4, 138, 4);
+    border: 1px solid rgb(4, 150, 4);
 }
 
 #btn2:hover{
     background-color: #ffdbdb;
+    color: rgb(136, 27, 5);
+    border: 1px solid rgb(136, 27, 5);
 }
 
 .content-body-transfer-income{
@@ -171,7 +197,6 @@ body{
     border: 1px solid #1c274c;
     line-height: 22px;
     text-align: center;
-    border-radius: 10px;
     cursor: pointer;
     color: rgb(0, 172, 0);
 }
@@ -189,12 +214,10 @@ body{
     border: 1px solid #1c274c;
     line-height: 22px;
     text-align: center;
-    border-radius: 10px;
     cursor: pointer;
     color: rgb(187, 31, 0);
     box-sizing: border-box;
     display: flex;
-    
 }
 
 .content-body-transfer-expenditure span{
@@ -218,7 +241,7 @@ body{
     font-size: 20px;
     margin: 50px auto;
     border: 2px solid  #1c274c;
-    width: 1200px;
+    width: 1170px;
     padding: 4px 0;
     height: 30px;
 } 
@@ -227,7 +250,6 @@ body{
     background-color: #ffd970;
 }
 
-.contant-body td{
-    
+.contant-body td{  
 }
 
