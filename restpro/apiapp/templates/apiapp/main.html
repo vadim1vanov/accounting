@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
-
+    
     <title>Бухгалтерия 1.0</title>
 </head>
 <body> 
@@ -29,10 +29,10 @@
             </div>   
         </div>
         
-        <p class="user-title-total-balance">Balance: <span id="balance-money">50000.00 ₽</span></p>
+        <p class="user-title-total-balance">Current balance: <span id="balance-money">50000</span> ₽</p>
         <div class="profile">
         <img src="../../static/apiapp/img/profile.svg" alt="">
-        <p>Profile</p>
+        <p>Sign in</p>
     </div>
     </div>
     
@@ -42,20 +42,42 @@
             <div class="debt">
                 <ul>
                     <li>
+                        <div class="debt-btn-l"></div>
                         <p>My debts
                             <img src="../../static/apiapp/img/debt.svg" alt="">  
                         </p>
+                        <div class="debt-btn-r"></div>
                     </li>
                     <li>
+                        <div class="debt-btn-l"></div>
+                        <p>My deposits
+                            <img src="../../static/apiapp/img/deposits.svg" alt="">
+                        </p>
+                        <div class="debt-btn-r"></div>
+                    </li>
+                    <li>
+                        <div class="debt-btn-l"></div>
+                        <p>My cheques
+                            <img src="../../static/apiapp/img/cheque.svg" alt="">
+                        </p>
+                        <div class="debt-btn-r"></div>
+                    </li>
+                    <li>
+                        <div class="debt-btn-l"></div>
                         <p>History 
                             <img src="../../static/apiapp/img/history.svg" alt="">
                         </p>
+                        <div class="debt-btn-r"></div>
                     </li>
                     <li>
+                        <div class="debt-btn-l"></div>
                         <p>Reserve fond
                             <img src="../../static/apiapp/img/gold.svg" alt="">
                         </p>
+                        <div class="debt-btn-r"></div>
                     </li>
+                    
+                    
                     
                 </ul>
                 
@@ -63,60 +85,107 @@
             </div>
             
             <div class="content-body-transfer">
-                <h2>Add position:</h2>  
+                <h2>Add position</h2>  
                 <div class="content-body-transfer-btn">
-                    <button class="content-body-transfer-income" type="submit" id="btn1">Income<span>+</span></button>
+                    <button class="content-body-transfer-income" type="submit" id="btn1" onclick="clickClack()">Income<span>+</span></button>
                     <button class="content-body-transfer-expenditure" type="submit" id="btn2">Expenditure <span>-</span></button> 
+                </div>
+                <h2>Upload cheque</h2>
+                <div class="content-body-transfer-download-btn">
+                    <button type="submit">Upload file <img src="../../static/apiapp/img/save.svg" alt=""></button>
                 </div>   
             </div>
         </div>
-            <table>
-                <tr>
+            <div class="table-line">
+                <div class="table-btn">
+                    <button>Find <img src="../../static/apiapp/img/find.svg" alt=""></button>
+                </div>
+                <div class="table-btn">
+                    <button>Incomes <img src="../../static/apiapp/img/arrow-up.svg" alt=""></button>
+                </div>
+                <div class="table-btn">
+                    <button>Expenditures <img src="../../static/apiapp/img/arrow-down.svg" alt=""></button>
+                </div>
+                <div class="table-btn">
+                    <button>Open all <img src="../../static/apiapp/img/all.svg" alt=""></button>
+                </div>
+            </div>
+            <table id="table_accounting">
+                <thead>
                     <th>Date</th>
                     <th>From/Where</th>
-                    <th>Type of expenses</th>
-                    <th>Name of expenses</th>
+                    <th>Type of operation</th>
+                    <th>Name of operation</th>
                     <th>Amount</th>
+                </thead>
+                <tr>
+                    <td>00-00-0000</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>0 ₽</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>00-00-0000</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>0 ₽</td>
                 </tr>
                 
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>00-00-0000</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>0 ₽</td>
+                </tr>
+                
+                <tr>
+                    <td>00-00-0000</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>0 ₽</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>00-00-0000</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>0 ₽</td>
+                </tr>
+                <tr>
+                    <td>00-00-0000</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>0 ₽</td>
+                </tr>
+                <tr>
+                    <td>00-00-0000</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>0 ₽</td>
+                </tr>
+                <tr>
+                    <td>00-00-0000</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>0 ₽</td>
+                </tr>
+                <tr>
+                    <td>00-00-0000</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>0 ₽</td>
                 </tr>
             </table>    
     </div>
    </div>
+   <script src="{% static 'apiapp/js/main.js' %}"></script>
 </body>
 </html>
