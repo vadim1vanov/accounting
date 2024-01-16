@@ -2,7 +2,7 @@
     max-width: 1300px;
     height: 100vh;
     margin: 0 auto;
-    background-color: #fdfdfd;
+    background-color: #fffef4;
     border-top-left-radius: 13px;
     border-top-right-radius: 13px;
     
@@ -66,13 +66,13 @@ body{
 
 .user-title-icon-pen{
     margin-left: 5px;
-    height: 98px;
+    height: 50px;
 }
 
 .user-title-icon-pen img{
     width: 24px;
     height: 24px;
-    padding-top: 37px;
+    padding-top: 15px;
     cursor: pointer;
 }
 .user-title-icon-pen img:hover{
@@ -90,6 +90,9 @@ body{
     font-size: 25px;
     margin-right: 35%;
     font-weight: bold;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .profile{
@@ -105,16 +108,17 @@ body{
 }
 .profile p{
     margin: 0;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
+    
 }
 .profile img{
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
 }
 
 #balance-money{
-    color: rgb(33, 170, 5);
+    color: green;
     margin-left: 10px;
 }
 
@@ -128,14 +132,18 @@ body{
 .content-body-head{
     display: flex;
     justify-content: space-between;
-    align-items:baseline;
+    align-items:center;
     margin: 35px 45px 60px 45px;
     border: 1px solid #b0b0b0;
     border-radius: 10px;
     padding: 15px 15px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
 }
 .debt{
-    font-size: 20px; 
+    
    
 }
 .debt img{
@@ -147,6 +155,7 @@ body{
 }
 
 .debt li{
+    
     border: 1px solid #acacac;
     list-style: none;
     justify-content: space-between;
@@ -185,15 +194,19 @@ body{
 
 .content-body-transfer{
     justify-content: right;
-    margin-top: 30px;
+    
     text-align: center;
     margin-right: 30px;
-    
+}
+
+.content-body-transfer h2{
+    font-size: 22px;
 }
 
 .content-body-transfer-btn{
     display: flex;
     margin-bottom: 40px;
+    
     
 }
 
@@ -209,6 +222,11 @@ body{
     cursor: pointer;
     padding: 10px 15px;
     font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    
+    font-weight: 400;
+    font-style: normal;
+    
 }
 .content-body-transfer-download-btn img{
     width: 18px;
@@ -219,6 +237,10 @@ body{
 .content-body-transfer button{
     display: flex;
     align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
     
 }
 
@@ -310,11 +332,16 @@ body{
     background-color: #ffd970;
 }
 .content-body td{ 
+
     font-size: 18px;
     max-width: 250px;
     overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  color: #868686;
+  font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 
