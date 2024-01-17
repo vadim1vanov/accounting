@@ -1,10 +1,35 @@
 let table_accounting = document.getElementById('table_accounting');
 
-function  clickClack(){
-    
-    incomeToTable('20.02.2023','Откуда то','dopof12312312312312312312312312332222222222222222222222222222222222222222222224233333333333333333333333333333333123123','zp',2000);
 
+const incomeBtn = document.getElementById('btn1');
+const closeModalBtn = document.querySelector('.close-modal-window');
+const modalElem = document.querySelector('.modal');
+
+modalElem.style.cssText = `
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 200ms ease-in;
+`;
+
+const openModal = () =>{
+    modalElem.style.visibility = 'visible';
+    modalElem.style.opacity = 1;  
 }
+
+const closeModal = event =>{
+    const target = event.target;
+    if(target === modalElem || target === closeModalBtn){
+        modalElem.style.opacity = 0;
+        setTimeout(()=>{
+            modalElem.style.visibility = 'hidden';
+        },200);
+    }
+}
+
+incomeBtn.addEventListener('click', openModal);
+closeModalBtn.addEventListener('click', closeModal);
+modalElem.addEventListener('click', closeModal);
 
 function  clickClack2(){
     
