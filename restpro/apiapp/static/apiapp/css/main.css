@@ -36,9 +36,8 @@ body{
 }
 
 .user-title{
-    border-top-left-radius: 13px;
-    border-top-right-radius: 13px;
-    margin-top: 25px;
+    
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
