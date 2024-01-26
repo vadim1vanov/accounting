@@ -21,115 +21,158 @@
 </head>
 <body> 
     
+    
+    
+    <div class="user-title">
+        <div class="container-head">
+
+            <div class="user-title-profile">
+                    <img src="../../static/apiapp/img/user-icon.svg" alt="" class="user-title-icon">
+                    <h2 class="user-title-name">Имя_Фамилия</h2>
+                    <div class="user-title-icon-pen">
+                        <img src="../../static/apiapp/img/pen.svg" alt="" >
+                    </div>   
+            </div>
+
+            <div class="profile">
+                <img src="../../static/apiapp/img/profile.svg" alt="">
+                <p>Войти</p>
+            </div>
+        
+        </div>
+    </div>
+            
+        
+   
+
+
    <div class="container">
    
-    <div class="user-title">
-        <div class="user-title-profile">
-            <img src="../../static/apiapp/img/user-icon.svg" alt="" class="user-title-icon">
-            <h2 class="user-title-name">User_name</h2>
-            <div class="user-title-icon-pen">
-                <img src="../../static/apiapp/img/pen.svg" alt="" >
-            </div>   
-        </div>
         
-        <p class="user-title-total-balance">Баланс: <span id="balance-money">0 ₽</span></p>
-        <div class="profile">
-        <img src="../../static/apiapp/img/profile.svg" alt="">
-        <p>Sign in</p>
-    </div>
-    </div>
     
-
+        <div class="modal">
+                    <div class="modal-window">
+                        <h2>Доход</h2>
+                        <table class="modal-table">
+                            <thead>
+                                <th>Дата</th>
+                                <th>Откуда/Куда</th>
+                                    <th>Тип операции</th>
+                                    <th>Наименование операции</th>
+                                    <th>Сумма</th>
+                                    <th>id</th>
+                                </thead>
+                                <tr>
+                                    <td><input type="date" id="modal-date" placeholder="Введите..."></td>
+                                    <td><input type="text" id="modal-from" placeholder="Введите..."></td>
+                                    <td><input type="text" id="modal-type" placeholder="Введите..."></td>
+                                    <td><input type="text" id="modal-name" placeholder="Введите..."></td>
+                                    <td><input type="number" id="modal-amount" placeholder="Введите..."></td>
+                                    <td><input type="text" id="modal-id"></td>
+                                </tr>
+                            </table>
+                            <div class="del-win">
+                                <p>Введите id записи:</p>
+                                <input type="text" placeholder="Введите..">
+                            </div>
+                            <button class="close-modal-window">&#10006;</button>
+                            <button class="add-modal-window">Добавить</button>
+                            <button class="exp-modal-window">Добавить</button>
+                            <button class="del-modal-window">Удалить</button>
+                        </div>
+        </div>
     <div class="content-body">
         <div class="content-body-head">
             <div class="debt">
                 <ul>
                     <li>
                         <div class="debt-btn-l"></div>
-                        <p>My debts
+                        <p>
+                            Мои задолженности
                             <img src="../../static/apiapp/img/debt.svg" alt="">  
                         </p>
                         <div class="debt-btn-r"></div>
                     </li>
                     <li>
                         <div class="debt-btn-l"></div>
-                        <p>My deposits
+                        <p>Мои вклады
                             <img src="../../static/apiapp/img/deposits.svg" alt="">
                         </p>
                         <div class="debt-btn-r"></div>
                     </li>
                     <li>
                         <div class="debt-btn-l"></div>
-                        <p>My cheques
+                        <p>Мои чеки
                             <img src="../../static/apiapp/img/cheque.svg" alt="">
                         </p>
                         <div class="debt-btn-r"></div>
                     </li>
                     <li>
                         <div class="debt-btn-l"></div>
-                        <p>History 
+                        <p>История
                             <img src="../../static/apiapp/img/history.svg" alt="">
                         </p>
                         <div class="debt-btn-r"></div>
                     </li>
                     <li>
                         <div class="debt-btn-l"></div>
-                        <p>Reserve fond
+                        <p>Резервный фонд
                             <img src="../../static/apiapp/img/gold.svg" alt="">
                         </p>
                         <div class="debt-btn-r"></div>
                     </li>
-                    
-                    
-                    
                 </ul>
-                
-            
             </div>
             
-            <div class="content-body-transfer">
-                <h2>Add an entry</h2>  
-                <div class="content-body-transfer-btn">
-                    <button class="content-body-transfer-income" type="submit" id="btn1" onclick="incomeBtn()">Income<span>+</span></button>
-                    <button class="content-body-transfer-expenditure" type="submit" id="btn2" onclick="clickClack2()">Expenditure <span>-</span></button> 
-                </div>
-                <div class="modal">
-                    <div class="modal-window">
-                        <h2>Modal window</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, repellendus labore quasi dolorem maxime minima saepe aspernatur. Tenetur tempore voluptatum, vel consequuntur sit, eius officia fugiat error sunt aliquam commodi.</p>
-                        <button class="close-modal-window">&#10006;</button>
+            <div class="content-body-right">
+                <p class="user-title-total-balance">Баланс: <span id="balance-money">0 ₽</span></p>
+              <!--<div class="content-body-transfer">
+                <h2>Загрузить чек</h2>
+                <div class="content-body-transfer-download-btn">
+                    <button type="submit">Открыть файл<img src="../../static/apiapp/img/save.svg" alt=""></button>
+                </div>   
+            </div>  -->
+            <div class="balance-change">
+                <p>Изменить текущий баланс</p>
+                <img src="../../static/apiapp/img/change.svg" alt="">
+            </div>
+            </div>
+            
+        </div>
+        <div class="content-body-table">
+            <div class="table-line">
+                <div class="table-btns">
+                    <div class="table-btn">
+                        <button>Найти <img src="../../static/apiapp/img/find.svg" alt=""></button>
+                    </div>
+                    <div class="table-btn">
+                        <button>Доходы <img src="../../static/apiapp/img/arrow-up.svg" alt=""></button>
+                    </div>
+                    <div class="table-btn">
+                        <button>Расходы <img src="../../static/apiapp/img/arrow-down.svg" alt=""></button>
+                    </div>
+                    <div class="table-btn">
+                        <button>Все операции <img src="../../static/apiapp/img/all.svg" alt=""></button>
+                    </div>
+                    <div class="table-btn">
+                        <button>Сохранить <img src="../../static/apiapp/img/save-list.svg" alt=""></button>
                     </div>
                 </div>
-                <h2>Upload cheque</h2>
-                <div class="content-body-transfer-download-btn">
-                    <button type="submit">Upload file <img src="../../static/apiapp/img/save.svg" alt=""></button>
-                </div>   
-            </div>
-        </div>
-            <div class="table-line">
-                <div class="table-btn">
-                    <button>Find <img src="../../static/apiapp/img/find.svg" alt=""></button>
-                </div>
-                <div class="table-btn">
-                    <button>Incomes <img src="../../static/apiapp/img/arrow-up.svg" alt=""></button>
-                </div>
-                <div class="table-btn">
-                    <button>Expenditures <img src="../../static/apiapp/img/arrow-down.svg" alt=""></button>
-                </div>
-                <div class="table-btn">
-                    <button>Open all <img src="../../static/apiapp/img/all.svg" alt=""></button>
-                </div>
-                <div class="table-btn">
-                    <button>Save <img src="../../static/apiapp/img/save-list.svg" alt=""></button>
+                 
+                <div class="content-body-transfer-btn">
+                    <button class="content-body-transfer-income" type="submit" id="btn1" >Доход +</button>
+                    <button class="content-body-transfer-expenditure" type="submit" id="btn2">Расход -</button> 
                 </div>
             </div>
             <table id="table_accounting">
                 <thead>
-                    <th>Date</th>
-                    <th>From/Where</th>
-                    <th>Type of operation</th>
-                    <th>Name of operation</th>
-                    <th>Amount</th>
+                    
+                    <th>Дата</th>
+                    <th>Откуда/Куда</th>
+                    <th>Тип операции</th>
+                    <th>Наименование операции</th>
+                    <th>Сумма</th>
+                    <th>id</th>
                 </thead>
                 <tr>
                     <td>00-00-0000</td>
@@ -137,6 +180,7 @@
                     <td>-</td>
                     <td>-</td>
                     <td>0 ₽</td>
+                    <td>#</td>
                 </tr>
                 <tr>
                     <td>00-00-0000</td>
@@ -144,6 +188,7 @@
                     <td>-</td>
                     <td>-</td>
                     <td>0 ₽</td>
+                    <td>#</td>
                 </tr>
                 
                 <tr>
@@ -152,6 +197,7 @@
                     <td>-</td>
                     <td>-</td>
                     <td>0 ₽</td>
+                    <td>#</td>
                 </tr>
                 
                 <tr>
@@ -160,6 +206,7 @@
                     <td>-</td>
                     <td>-</td>
                     <td>0 ₽</td>
+                    <td>#</td>
                 </tr>
                 <tr>
                     <td>00-00-0000</td>
@@ -167,6 +214,7 @@
                     <td>-</td>
                     <td>-</td>
                     <td>0 ₽</td>
+                    <td>#</td>
                 </tr>
                 <tr>
                     <td>00-00-0000</td>
@@ -174,6 +222,7 @@
                     <td>-</td>
                     <td>-</td>
                     <td>0 ₽</td>
+                    <td>#</td>
                 </tr>
                 <tr>
                     <td>00-00-0000</td>
@@ -181,10 +230,40 @@
                     <td>-</td>
                     <td>-</td>
                     <td>0 ₽</td>
+                    <td>#</td>
+                </tr>
+                <tr>
+                    <td>00-00-0000</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>0 ₽</td>
+                    <td>#</td>
+                </tr>
+                <tr>
+                    <td>00-00-0000</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>0 ₽</td>
+                    <td>#</td>
+                </tr>
+                <tr>
+                    <td>00-00-0000</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>0 ₽</td>
+                    <td>#</td>
                 </tr>
                 
-                
-            </table>    
+            </table>
+            <div class="del-table">
+                <button class="delete-position">Удалить</button>  
+            </div>
+        </div>
+            
+              
     </div>
    </div>
    <script src="{% static 'apiapp/js/main.js' %}"></script>
