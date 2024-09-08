@@ -28,15 +28,13 @@
 
             <div class="user-title-profile">
                     <img src="../../static/apiapp/img/user-icon.svg" alt="" class="user-title-icon">
-                    <h2 class="user-title-name">Имя_Фамилия</h2>
-                    <div class="user-title-icon-pen">
-                        <img src="../../static/apiapp/img/pen.svg" alt="" >
-                    </div>   
+                    <h2 class="user-title-name">Имя Фамилия</h2>
+                    
             </div>
 
             <div class="profile">
-                <img src="../../static/apiapp/img/profile.svg" alt="">
-                <p>Войти</p>
+                <a href='{% url "profile" %}'><img src="../../static/apiapp/img/profile.svg" alt="">
+                <p>Войти</p></a>
             </div>
         
         </div>
@@ -79,7 +77,7 @@
                             <button class="add-modal-window">Добавить</button>
                             <button class="exp-modal-window">Добавить</button>
                             <button class="del-modal-window">Удалить</button>
-                        </div>
+                        </div> 
         </div>
     <div class="content-body">
         <div class="content-body-head">
@@ -125,18 +123,17 @@
             </div>
             
             <div class="content-body-right">
-                <p class="user-title-total-balance">Баланс: <span id="balance-money">0 ₽</span></p>
-              <!--<div class="content-body-transfer">
-                <h2>Загрузить чек</h2>
-                <div class="content-body-transfer-download-btn">
-                    <button type="submit">Открыть файл<img src="../../static/apiapp/img/save.svg" alt=""></button>
-                </div>   
-            </div>  -->
+                <div class="user-title-total-balance">
+                <p>Баланс: <span id="balance-money">0 ₽</span></p>
+              
             <div class="balance-change">
-                <p>Изменить текущий баланс</p>
+                <p>Изменить баланс</p>
                 <img src="../../static/apiapp/img/change.svg" alt="">
             </div>
+        </div>
+
             </div>
+
             
         </div>
         <div class="content-body-table">

@@ -1,0 +1,39 @@
+.container{
+    background-color: #ffbb29;
+    max-width: 1300px; 
+    margin: 0 auto;
+}
+
+h1 {
+    padding-top: 25px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-color: #f8f8f8;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.container-head{
+    max-width: 1300px;
+    
+    margin: 0 auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-title{
+    background-color: #ffd970;
+    padding: 5px 50px;
+}

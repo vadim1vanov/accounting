@@ -150,8 +150,7 @@ function incomeToTable(date,from,type,name,amount, id){
         balance.style.color = 'green';
     }
     table_accounting.insertBefore(tr, firstRow);
-    table_accounting.deleteRow(lastRow);
-   
+    table_accounting.deleteRow(lastRow); 
 }
 
 function expenditureToTable(date,from,type,name,amount, id){

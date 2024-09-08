@@ -5,3 +5,6 @@ from django.shortcuts import render
 
 def main(request):
     return render(request, 'apiapp/main.html')
+
+def profile_view(request):
+    return render(request, 'apiapp/profile.html')
